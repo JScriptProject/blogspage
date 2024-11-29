@@ -31,7 +31,7 @@
      <meta name="robots" content="index, follow">
  
      <!-- Favicon -->
-     <link rel="icon" href="assets/media/logo.ico" type="image/x-icon">
+     <link rel="icon" href="../assets/media/logo.ico" type="image/x-icon">
  
      <!-- Theme Color -->
      <meta name="theme-color" content="#fff">
@@ -74,7 +74,7 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
      <!-- custom CSS file -->
-      <link rel="stylesheet" href="assets/main.css">
+      <link rel="stylesheet" href="../assets/main.css">
 
 </head>
 <body>
@@ -83,22 +83,22 @@
     <header class="header" id="header">
         <nav class="navbar container">
 
-            <a href="./index.html">
+            <a href="../index.html">
                 <h2 class="logo">BlogsPage</h2>
             </a>
             <div class="menu" id="menu">
                 <ul class="list">
                     <li class="list-item">
-                        <a href="./index.html" class="list-link current">Home</a>
+                        <a href="../index.html" class="list-link current">Home</a>
                     </li>
                     <li class="list-item">
-                        <a href="./index.html#popular-tags" class="list-link">Category</a>
+                        <a href="../index.html#popular-tags" class="list-link">Category</a>
                     </li>
                     <li class="list-item">
-                        <a href="./index.html#quick-read" class="list-link">Quick Read</a>
+                        <a href="../index.html#quick-read" class="list-link">Quick Read</a>
                     </li>
                     <li class="list-item">
-                        <a href="./index.html#newsletter" class="list-link">Newsletter</a>
+                        <a href="../index.html#newsletter" class="list-link">Newsletter</a>
                     </li>
                     <li class="list-item">
                         <a href="#" class="list-link">Contact</a>
@@ -150,31 +150,216 @@
 <section class="blog-post section-header-offset">
     <div class="blog-post-container container">
         <div class="blog-post-data">
-            <h1 class="title blog-post-title">Is the Covid still in India?</h1>
+            <h1 class="title blog-post-title">Master the Art of How to Center a Div: A Beginner-Friendly Guide</h1>
             <div class="article-data">
                 <span>23 Nov 2024</span>
                 <span class="article-data-spacer"></span>
                 <span>4 min read</span>
             </div>
-            <img src="assets/media/innovation-f1.jpg" alt="innovation">
+            <img src="../assets/media/how-to-center-div-guide.webp" alt="how-to-center-div-guide">
         </div>
 
         <div class="container">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt accusantium quod molestias amet quisquam, nemo, suscipit quo, id quibusdam impedit earum alias a tempore eveniet consectetur nobis temporibus cum. Facere soluta laborum voluptates et sequi.</p>
+            <p>Centering a <span class="highlighted-background">div</span> is a common task in web development, but depending on the scenario, the methods can vary. Whether you are a beginner or a seasoned developer, understanding different ways to <strong>center a div</strong> can make your layouts more versatile and responsive.</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deserunt dolor non pariatur error autem obcaecati quae numquam incidunt porro iste ex ipsum iusto cumque inventore, quaerat repudiandae quis iure suscipit dignissimos exercitationem cupiditate illo laudantium. Dolore facilis similique ducimus molestiae ex alias sequi nisi?</p>
+            <p>In this blog, we’ll explore multiple methods to center a <span class="highlighted-background">div</span> both horizontally and vertically using CSS. These methods include using <span class="highlighted-background">margin</span>, <span class="highlighted-background">flexbox</span>, <span class="highlighted-background">grid</span>, and modern CSS features.</p>
 
             <blockquote class="quote">
                 <p>
-                    <span><i class="ri-double-quotes-l"></i>hello ipsum dolor, sit amet consectetur adipisicing elit. Illum maxime culpa ea aliquid. Ducimus unde voluptatibus hic modi earum architecto error quibusdam tenetur perferendis in?<i class="ri-double-quotes-r"></i></i></span>
+                    <span><i class="ri-double-quotes-l"></i>The simplest and most effective way to center a <strong>div</strong> is by using <strong>margin: auto</strong>. This method requires minimal setup, only needing the <strong>display: block</strong> property applied to the centered <strong>div</strong>, which avoids complications.<i class="ri-double-quotes-r"></i></i></span>
                 </p>
             </blockquote>
+            <hr>
+            <h2>Methods to Center a Div</h2>
+            <h3>1. Using  <span class="highlighted-background fw-400">margin: auto</span></h3>
+            <p>This is one of the simplest methods for horizontally centering a <span class="highlighted-background fw-400">div</span>.</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deserunt dolor non pariatur error autem obcaecati quae numquam incidunt porro iste ex ipsum iusto cumque inventore, quaerat repudiandae quis iure suscipit dignissimos exercitationem cupiditate illo laudantium. Dolore facilis similique ducimus molestiae ex alias sequi nisi?</p>
+            <!-- code snippet started here -->
+            <div class="code-snippet-outer">
 
+                <!-- html code  -->
+                <div class="code-container">
+                    <div class="code-header">
+                      <span class="code-language">HTML</span>
+                      <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+                    </div>
+                    <pre class="code-snippet">
+                <code>
+                &lt;div class="center-div"&gt;I am centered&lt;div&gt;
+                </code>
+                    </pre>
+                  </div>
+                
+                  <!-- CSS code -->
+                  <div class="code-container">
+                    <div class="code-header">
+                      <span class="code-language">CSS</span>
+                      <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+                    </div>
+                    <pre class="code-snippet">
+                <code>
+                    .center-div {
+                        width: 200px;
+                        margin: 0 auto;
+                      }
+                </code>
+                    </pre>
+                  </div>
+            </div>
+            <!-- code snippet end here -->
+
+            <h4>Things to remember while using margin:auto</h4>
+            <ul>
+                <li>This works only for block-level elements with a specified width.</li>
+                <li>It’s effective for horizontal centering, but not vertical.</li>
+            </ul>
+            <h3>2. Using Flexbox</h3>
+            <p>Flexbox is a powerful and modern solution to center content both horizontally and vertically.</p>
+
+             <!-- code snippet started here -->
+             <div class="code-snippet-outer">
+
+                <!-- html code  -->
+                <div class="code-container">
+                    <div class="code-header">
+                      <span class="code-language">HTML</span>
+                      <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+                    </div>
+                    <pre class="code-snippet">
+                <code>
+                    &lt;div class="flex-container"&gt;
+                    &lt;div class="center-div"&gt;I am centered&lt;/div&gt;
+                  &lt;/div&gt;
+                </code>
+                    </pre>
+                  </div>
+                
+                  <!-- CSS code -->
+                  <div class="code-container">
+                    <div class="code-header">
+                      <span class="code-language">CSS</span>
+                      <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+                    </div>
+                    <pre class="code-snippet">
+                <code>
+                    .flex-container {
+                        display: flex;
+                        justify-content: center; /* Horizontally centers */
+                        align-items: center;    /* Vertically centers */
+                        height: 100vh;
+                      }
+                </code>
+                    </pre>
+                  </div>
+            </div>
+            <!-- code snippet end here -->
+
+            <ul>
+                <li><strong>Advantages:</strong> Easy, versatile, and responsive.</li>
+                <li>Works even when the size of the child element isn’t fixed.</li>
+            </ul>
+
+            <h3>3. Using CSS Grid</h3>
+            <p>CSS Grid offers a more declarative approach to centering a <span class="highlighted-background">div</span>.</p>
+            
+             <!-- code snippet started here -->
+             <div class="code-snippet-outer">
+
+                <!-- html code  -->
+                <div class="code-container">
+                    <div class="code-header">
+                      <span class="code-language">HTML</span>
+                      <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+                    </div>
+                    <pre class="code-snippet">
+                <code>
+                    &lt;div class="grid-container"&gt;
+                    &lt;div class="center-div"&gt;I am centered&lt;/div&gt;
+                  &lt;/div&gt;
+                </code>
+                    </pre>
+                  </div>
+                
+                  <!-- CSS code -->
+                  <div class="code-container">
+                    <div class="code-header">
+                      <span class="code-language">CSS</span>
+                      <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+                    </div>
+                    <pre class="code-snippet">
+                <code>
+                    .grid-container {
+                        display: grid;
+                        place-items: center;
+                        height: 100vh;
+                      }
+                </code>
+                    </pre>
+                  </div>
+            </div>
+            <!-- code snippet end here -->
+            <ul><li>The <span class="highlighted-background">place-items: center</span> property centers the child element both horizontally and vertically.</li></ul>
+
+            <h3>4. Using Positioning</h3>
+            <p>Another common method involves the use of <span class="highlighted-background">position</span>.</p>
+
+            <!-- code snippet started here -->
+            <div class="code-snippet-outer">
+
+                <!-- html code  -->
+                <div class="code-container">
+                    <div class="code-header">
+                      <span class="code-language">HTML</span>
+                      <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+                    </div>
+                    <pre class="code-snippet">
+                <code>
+                    &lt;div class="position-container"&gt;
+                    &lt;div class="center-div"&gt;I am centered&lt;/div&gt;
+                  &lt;/div&gt;
+                </code>
+                    </pre>
+                  </div>
+                
+                  <!-- CSS code -->
+                  <div class="code-container">
+                    <div class="code-header">
+                      <span class="code-language">CSS</span>
+                      <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+                    </div>
+                    <pre class="code-snippet">
+                <code>
+                    .position-container {
+                        position: relative;
+                        height: 100vh;
+                      }
+                      
+                      .center-div {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                      }
+                </code>
+                    </pre>
+                  </div>
+            </div>
+            <!-- code snippet end here -->
+            <ul>
+                <li><strong>Advantages:</strong> Works well in fixed and absolute contexts.</li>
+                <li><strong>Drawbacks:</strong> More verbose compared to Flexbox and Grid.</li>
+            </ul>
+
+            <h2>Choosing the Best Method</h2>
+            <ul>
+                <li>For simple horizontal alignment: <span class="highlighted-background"> margin: auto</span>.</li>
+                <li>For full-page layouts: Flexbox or Grid.</li>
+                <li>For absolute positioning scenarios: <strong>position</strong> with <strong>transform</strong>.</li>
+            </ul>
+            <!-- author -->
             <div class="author d-grid">
                 <div class="author-image-box">
-                    <img src="assets/media/author.png" alt="author" class="article-image">
+                    <img src="../assets/media/author.png" alt="author" class="article-image">
                 </div>
 
                 <div class="author-about">
@@ -184,14 +369,10 @@
                     <ul class="list social-media">
                         <li class="list-item">
                             <a href="#" class="list-link">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-    
-                            <a href="#" class="list-link">
                                 <i class="ri-facebook-circle-line"></i>
                             </a>
     
-                            <a href="#" class="list-link">
+                            <a href="https://x.com/ravindra5k" class="list-link">
                                 <i class="ri-twitter-line"></i>
                             </a>
                         </li>
@@ -212,7 +393,7 @@
     <footer class="footer section">
         <div class="footer-container container d-grid">
             <div class="company-data">
-                <a href="./index.html">
+                <a href="../index.html">
                     <h2 class="logo">BlogsPage</h2>
                 </a>
                 <p class="company-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laudantium facilis sapiente a recusandae quia consectetur nulla eum iusto repudiandae.</p>
@@ -321,6 +502,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Custom JS file -->
-     <script src="assets/main.js"></script>
+     <script src="../assets/main.js"></script>
 </body>
 </html>

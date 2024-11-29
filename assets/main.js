@@ -100,3 +100,27 @@ const swiper = new Swiper('.swiper',{
         }
     }
 })
+
+// copy code function
+
+function copyCode() {
+    // Select the text
+    const codeSnippet = event.target.closest('.code-container').querySelector('.code-snippet code');
+    
+    // Create a range and selection
+    const range = document.createRange();
+    range.selectNode(codeSnippet);
+    window.getSelection().removeAllRanges();  // Clear any previous selections
+    window.getSelection().addRange(range);  // Select the range
+  
+    // Execute the copy command
+    try {
+      document.execCommand('copy');
+      alert('Code copied to clipboard!');
+    } catch (err) {
+      console.log('Unable to copy: ', err);
+    }
+    
+    // Deselect the code
+    window.getSelection().removeAllRanges();
+  }

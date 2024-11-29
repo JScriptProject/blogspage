@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Blogspage blog offers valuable content on web development and practical guidance for starting and managing an online business.">
+    <meta name="keywords" content="blogspage, technical blog, blogs page">
+    <meta name="author" content="Ravindra">
     <title>BlogsPage</title>
 
-    <!-- fevicon -->
-     <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+     <!-- Open Graph Meta Tags (Social Media) -->
+     <meta property="og:title" content="BlogsPage Blog">
+     <meta property="og:description" content="The Blogspage blog offers valuable content on web development and practical guidance for starting and managing an online business.">
+     <meta property="og:image" content="https://blog.blogspage.com/assets/logo.png">
+     <meta property="og:url" content="https://blog.blogspage.com">
+     <meta property="og:type" content="article">
+   
+ 
+     <!-- Twitter Card Meta Tags -->
+     <meta name="twitter:card" content="summary_large_image">
+     <meta name="twitter:title" content="BlogsPage Blog">
+     <meta name="twitter:description" content="The Blogspage blog offers valuable content on web development and practical guidance for starting and managing an online business.">
+     <meta name="twitter:image" content="https://blog.blogspage.com/assets/logo.png">
+ 
+     <!-- Canonical URL -->
+     <link rel="canonical" href="https://blog.blogspage.com/">
+ 
+     <!-- Robots -->
+     <meta name="robots" content="index, follow">
+ 
+     <!-- Favicon -->
+     <link rel="icon" href="assets/media/logo.ico" type="image/x-icon">
+ 
+     <!-- Theme Color -->
+     <meta name="theme-color" content="#fff">
+ 
+     <!-- Additional SEO Enhancements -->
+     <!-- JSON-LD Structured Data Example -->
+     <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "Blogspage Blog",
+            "url": "https://blog.blogspage.com",
+            "description": "The Blogspage blog offers valuable content on web development and practical guidance for starting and managing an online business.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Blogspage",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://blog.blogspage.com/assets/logo.png"
+              }
+            },
+            "mainEntityOfPage": "https://blog.blogspage.com",
+            "brand": {
+              "@type": "Brand",
+              "name": "Blogspage"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://blog.blogspage.com/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }          
+     </script>
 
      <!-- remix icon -->
      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css" rel="stylesheet">
@@ -24,7 +81,7 @@
     <header class="header" id="header">
         <nav class="navbar container">
 
-            <a href="./index.html">
+            <a href="index.html">
                 <h2 class="logo">BlogsPage</h2>
             </a>
             <div class="menu" id="menu">
@@ -33,22 +90,22 @@
                         <a href="#" class="list-link current">Home</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Category</a>
+                        <a href="#popular-tags" class="list-link">Category</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Reviews</a>
+                        <a href="#quick-read" class="list-link">Quick Read</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Membership</a>
+                        <a href="#newsletter" class="list-link">Newsletter</a>
                     </li>
                     <li class="list-item">
                         <a href="#" class="list-link">Contact</a>
                     </li>
-                    <li class="list-item screen-lg-hidden">
+                    <!-- <li class="list-item screen-lg-hidden">
                         <a href="#" class="list-link">Sign in</a>
-                    </li>
+                    </li> -->
                     <li class="list-item screen-lg-hidden">
-                        <a href="#" class="list-link">Sign up</a>
+                        <a href="#" class="list-link">Agency</a>
                     </li>
                 
                 </ul>
@@ -65,8 +122,8 @@
                     <i class="ri-menu-3-line open-menu-icon"></i>
                     <i class="ri-close-line close-menu-icon"></i>
                 </button>
-                <a href="#" class="list-link screen-sm-hidden">Sign in</a>
-                <a href="#" class="list-link screen-sm-hidden btn sign-up-btn fancy-border"><span>Sign up</span></a>
+                <!-- <a href="#" class="list-link screen-sm-hidden">Sign in</a> -->
+                <a href="#" class="list-link screen-sm-hidden btn sign-up-btn fancy-border"><span>Agency</span></a>
             </div>
         </nav>
     </header>
@@ -88,7 +145,7 @@
 </div>
     <!-- Featured Articles  -->
 
-<section class="featured-articles section-header-offset">
+<section class="featured-articles section-header-offset" id="featured-articles">
     <div class="featured-articles-container container d-grid">
         <div class="featrured-content d-grid">
             <div class="headline-banner">
@@ -99,12 +156,12 @@
             </div>
 
             <!-- article start here -->
-            <a href="#" class="article featured-article featured-article-1">
-                <img src="assets/innovation-f1.jpg" alt="innovation" class="article-image">
-                <span class="article-category">Technology</span>
+            <a href="web-dev/how-to-center-div-guide.html" class="article featured-article featured-article-1">
+                <img src="assets/media/innovation-f1.jpg" alt="innovation" class="article-image">
+                <span class="article-category">Web-Dev</span>
                 <div class="article-data-container">
                     <div class="article-data">
-                        <span>Dec 5th 2021</span>
+                        <span>Nov 25th 2024</span>
                         <span class="article-data-spacer"></span>
                         <span>8 min read</span>
                     </div>
@@ -114,7 +171,7 @@
 
             <!-- article start here -->
             <a href="#" class="article featured-article featured-article-2">
-                <img src="assets/fitness-f1.jpg" alt="fitness" class="article-image">
+                <img src="assets/media/fitness-f1.jpg" alt="fitness" class="article-image">
                 <span class="article-category">Fitness</span>
                 <div class="article-data-container">
                     <div class="article-data">
@@ -128,7 +185,7 @@
 
             <!-- article start here -->
             <a href="#" class="article featured-article featured-article-3">
-                <img src="assets/mindfullness-f1.jpg" alt="mindfullness" class="article-image">
+                <img src="assets/media/mindfullness-f1.jpg" alt="mindfullness" class="article-image">
                 <span class="article-category">Mindfulness</span>
                 <div class="article-data-container">
                     <div class="article-data">
@@ -150,7 +207,7 @@
             <a href="#" class="trending-news-box">
                 <div class="trending-news-image-box">
                     <span class="trending-number place-item-center">01</span>
-                        <img src="assets/pic1.jpg" alt="picture" class="article-image">
+                        <img src="assets/media/pic1.jpg" alt="picture" class="article-image">
                 </div>
                 <div class="trending-news-data">
                     <div class="article-data">
@@ -166,7 +223,7 @@
             <a href="#" class="trending-news-box">
                 <div class="trending-news-image-box">
                     <span class="trending-number place-item-center">02</span>
-                        <img src="assets/pic2.jpg" alt="picture" class="article-image">
+                        <img src="assets/media/pic2.jpg" alt="picture" class="article-image">
                 </div>
                 <div class="trending-news-data">
                     <div class="article-data">
@@ -182,7 +239,7 @@
             <a href="#" class="trending-news-box">
                 <div class="trending-news-image-box">
                     <span class="trending-number place-item-center">03</span>
-                        <img src="assets/pic3.jpg" alt="picture" class="article-image">
+                        <img src="assets/media/pic3.jpg" alt="picture" class="article-image">
                 </div>
                 <div class="trending-news-data">
                     <div class="article-data">
@@ -198,7 +255,7 @@
             <a href="#" class="trending-news-box">
                 <div class="trending-news-image-box">
                     <span class="trending-number place-item-center">04</span>
-                        <img src="assets/pic4.jpg" alt="picture" class="article-image">
+                        <img src="assets/media/pic4.jpg" alt="picture" class="article-image">
                 </div>
                 <div class="trending-news-data">
                     <div class="article-data">
@@ -214,7 +271,7 @@
 </section>
     <!-- Quick Read -->
 
-    <section class="quick-read section">
+    <section class="quick-read section" id="quick-read">
         <div class="container">
             <h2 class="title section-title" data-name="Quick Read">
               Quick Read
@@ -225,7 +282,7 @@
 
                     <!-- article slider 1-->
                     <a href="#" class="article swiper-slide">
-                        <img src="assets/pic5.jpg" alt="quick read image" class="article-image">
+                        <img src="assets/media/pic5.jpg" alt="quick read image" class="article-image">
 
                         <div class="article-data-container">
                             <div class="article-data">
@@ -240,7 +297,7 @@
 
                     <!-- article slider 2-->
                     <a href="#" class="article swiper-slide">
-                        <img src="assets/pic6.jpg" alt="quick read image" class="article-image">
+                        <img src="assets/media/pic6.jpg" alt="quick read image" class="article-image">
 
                         <div class="article-data-container">
                             <div class="article-data">
@@ -255,7 +312,7 @@
 
                     <!-- article slider 3-->
                     <a href="#" class="article swiper-slide">
-                        <img src="assets/pic7.jpg" alt="quick read image" class="article-image">
+                        <img src="assets/media/pic7.jpg" alt="quick read image" class="article-image">
 
                         <div class="article-data-container">
                             <div class="article-data">
@@ -270,7 +327,7 @@
 
                     <!-- article slider 4-->
                     <a href="#" class="article swiper-slide">
-                        <img src="assets/pic8.jpg" alt="quick read image" class="article-image">
+                        <img src="assets/media/pic8.jpg" alt="quick read image" class="article-image">
 
                         <div class="article-data-container">
                             <div class="article-data">
@@ -285,7 +342,7 @@
 
                     <!-- article slider 5 -->
                     <a href="#" class="article swiper-slide">
-                        <img src="assets/pic9.jpg" alt="quick read image" class="article-image">
+                        <img src="assets/media/pic9.jpg" alt="quick read image" class="article-image">
 
                         <div class="article-data-container">
                             <div class="article-data">
@@ -300,7 +357,7 @@
 
                     <!-- article slider 6 -->
                     <a href="#" class="article swiper-slide">
-                        <img src="assets/pic10.jpg" alt="quick read image" class="article-image">
+                        <img src="assets/media/pic10.jpg" alt="quick read image" class="article-image">
 
                         <div class="article-data-container">
                             <div class="article-data">
@@ -323,7 +380,7 @@
 
     <!-- Older post -->
 
-    <section class="section older-post">
+    <section class="section older-post" id="older-post">
         <div class="container">
             <h2 class="title section-title" data-name="Older post">Older post</h2>
             <div class="older-post-grid-wrapper d-grid">
@@ -331,7 +388,7 @@
                 <!-- older post 1 -->
                 <a href="#" class="article d-grid">
                     <div class="older-post-article-image-wrapper">
-                         <img src="assets/pic11.jpg" alt="" class="article-image">
+                         <img src="assets/media/pic11.jpg" alt="" class="article-image">
                     </div>
                     <div class="article-data-container">
                         <div class="article-data">
@@ -348,7 +405,7 @@
                 <!-- older post 2 -->
                 <a href="#" class="article d-grid">
                     <div class="older-post-article-image-wrapper">
-                         <img src="assets/pic12.jpg" alt="" class="article-image">
+                         <img src="assets/media/pic12.jpg" alt="" class="article-image">
                     </div>
                     <div class="article-data-container">
                         <div class="article-data">
@@ -365,7 +422,7 @@
                 <!-- older post 3 -->
                 <a href="#" class="article d-grid">
                     <div class="older-post-article-image-wrapper">
-                         <img src="assets/pic13.jpg" alt="" class="article-image">
+                         <img src="assets/media/pic13.jpg" alt="" class="article-image">
                     </div>
                     <div class="article-data-container">
                         <div class="article-data">
@@ -381,7 +438,7 @@
                 <!-- older post 4 -->
                 <a href="#" class="article d-grid">
                     <div class="older-post-article-image-wrapper">
-                         <img src="assets/pic14.jpg" alt="" class="article-image">
+                         <img src="assets/media/pic14.jpg" alt="" class="article-image">
                     </div>
                     <div class="article-data-container">
                         <div class="article-data">
@@ -397,7 +454,7 @@
                 <!-- older post 5 -->
                 <a href="#" class="article d-grid">
                     <div class="older-post-article-image-wrapper">
-                         <img src="assets/pic15.jpg" alt="" class="article-image">
+                         <img src="assets/media/pic15.jpg" alt="" class="article-image">
                     </div>
                     <div class="article-data-container">
                         <div class="article-data">
@@ -413,7 +470,7 @@
                 <!-- older post 6 -->
                 <a href="#" class="article d-grid">
                     <div class="older-post-article-image-wrapper">
-                         <img src="assets/pic6.jpg" alt="" class="article-image">
+                         <img src="assets/media/pic6.jpg" alt="" class="article-image">
                     </div>
                     <div class="article-data-container">
                         <div class="article-data">
@@ -437,7 +494,7 @@
     </section>
     <!-- popular tags -->
 
-    <div class="section popular-tags">
+    <div class="section popular-tags" id="popular-tags">
         <div class="container">
             <h2 class="title section-title" data-name="Popular tags">Popular tags</h2>
             <div class="popular-tags-container d-grid">
@@ -445,37 +502,37 @@
                 <!-- popular tag 1 -->
                 <a href="#" class="article">
                     <span class="tag-name">#Travel</span>
-                    <img src="assets/tag1.jpg" alt="image" class="article-image">
+                    <img src="assets/media/tag1.jpg" alt="image" class="article-image">
                 </a>
 
                 <!-- popular tag 2 -->
                 <a href="#" class="article">
                     <span class="tag-name">#Food</span>
-                    <img src="assets/tag2.jpg" alt="image" class="article-image">
+                    <img src="assets/media/tag2.jpg" alt="image" class="article-image">
                 </a>
 
                 <!-- popular tag 3 -->
                 <a href="#" class="article">
                     <span class="tag-name">#Mindfullness</span>
-                    <img src="assets/tag3.jpg" alt="image" class="article-image">
+                    <img src="assets/media/tag3.jpg" alt="image" class="article-image">
                 </a>
 
                 <!-- popular tag 4 -->
                 <a href="#" class="article">
                     <span class="tag-name">#Health</span>
-                    <img src="assets/tag4.jpg" alt="image" class="article-image">
+                    <img src="assets/media/tag4.jpg" alt="image" class="article-image">
                 </a>
 
                 <!-- popular tag 5 -->
                 <a href="#" class="article">
                     <span class="tag-name">#Technology</span>
-                    <img src="assets/tag5.jpg" alt="image" class="article-image">
+                    <img src="assets/media/tag5.jpg" alt="image" class="article-image">
                 </a>
 
                 <!-- popular tag 6 -->
                 <a href="#" class="article">
                     <span class="tag-name">#News</span>
-                    <img src="assets/tag6.jpg" alt="image" class="article-image">
+                    <img src="assets/media/tag6.jpg" alt="image" class="article-image">
                 </a>
             </div>
         </div>
@@ -483,7 +540,7 @@
 
     <!-- Newsletter -->
 
-    <section class="newsletter section">
+    <section class="newsletter section" id="newsletter">
         <div class="container">
             <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
             <div class="form-container-inner">

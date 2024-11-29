@@ -77,6 +77,10 @@ i{
     font-size: var(--font-size-md);
 }
 
+.fw-400{
+    font-weight: 400;
+
+}
 /* Theme color change */
 
 body.light-theme{
@@ -722,8 +726,27 @@ font-size: var(--font-size-xsm);
     display: flex;
     flex-direction: column;
     gap: var(--gap);
+    
 }
 
+.blog-post-container .container ul{
+    list-style: var(--primary-background-color);
+    margin-left: var(--margin-md);
+}
+
+.blog-post-container .container ul li{
+    padding-bottom: 1rem;
+}
+
+.blog-post-container .container ul li:last-of-type{
+    padding-bottom: 0;
+}
+body.light-theme .blog-post-container .container{
+    color: #131417;
+}
+.blog-post-container .container{
+    color: var(--light-color-alt);
+}
 .quote{
     background-color: var(--secondary-background-color);
     padding: 2.5rem;
@@ -770,6 +793,78 @@ font-size: var(--font-size-xsm);
     margin-top: auto;
     margin-bottom: 0;
 }
+
+
+/* Blog additional clases*/
+
+.highlighted-background{
+    position: relative;
+}
+.highlighted-background::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--transparent-dark-color);
+    z-index: -1;
+    transform: scale(1.2);
+
+}
+
+.code-snippet-outer{
+    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-color-alt);
+}
+
+
+.code-container {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  .code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .code-language {
+    font-weight: bold;
+    color: #2a2a2a;
+  }
+  
+  .copy-btn {
+    background:var(--gradient-color);
+    background-size: 200%;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .copy-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .code-snippet {
+    background-color: #2e2e2e;
+    color: #f8f8f2;
+    padding: 16px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+
+  }
 
 
 /* media queries */
@@ -915,7 +1010,7 @@ font-size: var(--font-size-xsm);
    }
 
    .blog-post-data img{
-    height: 40rem;
+    height: 60rem;
    }
 }
 
@@ -935,3 +1030,4 @@ font-size: var(--font-size-xsm);
         grid-row: 1/-1;
     }
 }
+
